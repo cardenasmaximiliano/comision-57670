@@ -1,0 +1,88 @@
+h1{
+    background-color: lightblue;
+}
+
+p{
+    background-color: beige;
+    color: rgb(255, 18, 18);
+}
+
+/*css es un lenguaje SECUENCIAL
+
+*/
+
+
+/*
+una clase me ayuda a identificar una etiqueta
+esta clase tiene la particularidad de repetirse
+en otras en otras etiquetas donde se replique el codigo
+
+las clases siempre llevan el nombre, de la funcion
+que van a tener en el codigo
+
+las clases se pueden escribir a traves de diferentes 
+nomenclaturas.
+
+estas son:
+
+camelCase o joroba de camello: primera en minuscula, segunda palabra pegada pero con la primera letra en mayuscula
+kebab-case: noticia-secundaria
+snake_case: noticias_secundaria
+
+BEM => bloque elemento y modificador
+
+*/
+
+
+section p{
+    background-color: green;
+    color: white;
+} 
+
+/*si quiero llamar una clase*/
+
+.noticiaSecundaria{
+    background-color: lightblue;
+    color: white;
+}
+
+/*
+la especificidad por sumatoria nos dice lo siguiente
+
+todos los selectores poseen un puntaje que ayuda a que 
+sobresalgan sobre el resto de las etiquetas
+
+una etiqueta = tiene un valor de 1
+una clase = tiene valor de 10
+id = tiene valor de 100
+
+*/
+
+
+ .noticiaSecundaria h2{
+    color: blue;
+}
+
+
+.noticiaSecundaria p{
+    background-color: red;
+    color: white;
+} 
+
+#noticiaId p{
+    background-color: pink;
+}
+
+.h1-tienda{
+    background-color: lightcoral;
+    color: white;
+    /*text*/
+    text-align:center;
+    text-decoration: none;
+    text-transform:capitalize;
+    
+    /**font**/
+    font-size: 40px;
+    font-weight:bolder;
+
+}
