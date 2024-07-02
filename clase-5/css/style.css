@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    display : esto es una propiedad que cambia el estado natural de una etiqueta
+
+    display:block;
+    display:inline;
+*/
+
+/* nav ul li{
+    display: inline;
+}
+p span{
+     display: block; 
+    color: red;
+} */
+.header-index{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.875rem;
+    /*position
+    static por defecto
+
+    absolute
+    relative
+    fixed
+    sticky
+
+    */
+    position: sticky;
+    /*
+    top
+    right
+    buttom
+    left
+    */
+    top: 0;
+}
+.header-index h1{
+    font-size: 3.75rem;
+    width: auto;
+}
+nav{
+    width: 90%;
+}
+.navbar{
+    display: flex;
+    gap: 1.875rem;
+    justify-content: center;
+    
+}
+
+.img{
+    width: 100%;
+    height: 18.75rem;
+    background-image: url("https://images.unsplash.com/photo-1701278109202-ad455b0506ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.contenedor-cards{
+    display: flex;
+    width: 100%;
+    height: 37.5rem;
+    /**flex posee 2 propiedades principales, 1 es la direccion, 2 la flexibilidad*/
+    flex-direction: row;
+   /* flex-wrap: wrap; */
+   /**movimientos**/
+   background-color: lightpink;
+    justify-content: center;
+   align-items: center; 
+   /* justify-content: center; */
+   align-items: center;
+   gap: 1.875rem;
+}
+
+.card{
+    width: 12.5rem;
+    height: 18.75rem;
+    background-color: rgba(211, 211, 211, 0.209);
+    border-radius: .3125rem;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+   
+}
+
+.card .card-img{
+    width: 100%;
+    height: 60%;
+    background-color: rgba(158, 159, 159, 0.262);
+}
+
+.card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-0 {
+    background-color: rgb(210, 230, 173);
+    /* align-self: flex-start; */
+    order: 4;
+}
+.card-1 {
+    background-color: rgb(213, 173, 230);
+    order: 2;
+}
+.card-2 {
+    background-color: rgb(240, 103, 126);
+    /* align-self: flex-end; */
+    order: 3;
+}
+.card-3 {
+    background-color: rgb(130, 216, 106);
+    order: 1;
+}
+.card-4 {
+    background-color: rgb(231, 219, 91);
+    /* align-self: flex-start; */
+    order: 5;
+}
+
+
+
+
