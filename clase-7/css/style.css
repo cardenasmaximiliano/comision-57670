@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px .625rem;
+    align-items: center;
+    
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1.5625rem;
+}
+.principal{
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://plus.unsplash.com/premium_photo-1700826096220-1a0b6c375a37?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.principal div{
+    width: 25rem;
+}
+
+
+/**
+mobile first a diferencia de responsive web design, utiliza en vez de la regla max-width, usa min-width: 
+
+mobile first es creciente
+
+desktop decreciente
+
+*/
+
+@media (max-width:1024px){
+    
+    header{
+        background-color: red;
+    }
+    .principal{
+        background-image: url("https://images.unsplash.com/photo-1720371300677-ba4838fa0678?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        height: 18.75rem;
+    }
+    .principal div{
+        color: white;
+    }
+
+}
+
+.galeria{
+    display: grid;
+    margin-top: 1.875rem;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(4,100px);
+    justify-content: center;
+
+
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img1{
+    grid-column: 1/3;
+    grid-row: 1/5;
+}
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        background-color: black;
+    }
+
+    header a{
+        color: white;
+        font-style: italic;
+        font-size: 25px;
+}
+    .principal{
+        height: 15.625rem;
+        background-position: center;
+        background-size: cover;
+    }
+    .principal div {
+        color: pink;
+        text-align: center;
+    }
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img4{
+        grid-column: 2/3;
+        grid-row : 4/5;
+    }
+    .img5{
+        display: none;
+    }
+}
+
+@media(max-width:425px){
+
+    .principal div{
+        margin: 0px 1rem;
+    }
+
+   
+}
+
+@media(max-width:375px){
+    header a{
+        padding-bottom: 1.25rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
